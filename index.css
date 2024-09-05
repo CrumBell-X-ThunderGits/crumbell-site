@@ -61,8 +61,10 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 58px;
+    /* position: fixed; */
+    background-color: white;
+    width: 100%;
    
-
 }
 .logo{
     display: flex;
@@ -181,11 +183,14 @@ body {
 
 /* HERO */
 
+
 .hero{
     width: 100%;
-    height: 100vh;
-    padding: 0px 80px;
-    
+    height:100%;
+    padding: 31px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
 
@@ -198,10 +203,12 @@ body {
 
 .product{
     /* background-color: #00bfff; */
+    
 }
 
 .hero-content h1{
     /* font-size: 67px; */
+    /* background-color: #002e5f; */
     font-size: 7rem;
     font-weight: 700;
     line-height: 1.2;
@@ -221,12 +228,11 @@ body {
 }
 
 .hero-grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    width: 100%;
     display: flex;
     align-items: center;
-    /* padding-block: 7rem; */
-    /* background-color: white; */
+    justify-content: space-between;
+    /* background-color: #00bfff; */
 }
 
 .buttons{
@@ -268,6 +274,17 @@ background-color: white;
 color:rgb(224, 41, 9) ;}
 
 
+
+@media screen and (max-width:1055px){
+    .hero-content{
+        padding-right: 2rem;
+    }
+
+    .hero{
+        padding: 0px 47px;
+    }
+}
+
 @media screen and (max-width:1500px){
     .product img{
         width: 450px;
@@ -294,7 +311,6 @@ color:rgb(224, 41, 9) ;}
     }
 
     .hero-content h1{
-        /* font-size: 67px; */
         font-size: 4rem;
         font-weight: 700;
     }
@@ -302,25 +318,15 @@ color:rgb(224, 41, 9) ;}
 
 @media screen and (max-width:880px){
 
-
-    .hero-content h1{
-        padding-top: 7rem;
-    }
-
     .hero{
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         padding: 0px 47px;
-    }
-    .hero-grid{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-     
     }
 
     .hero-content{
         color: white;
-        padding-right: 5rem;
+        padding-right: 0rem;
         /* background-color: #595959; */
         
     }
@@ -337,12 +343,24 @@ color:rgb(224, 41, 9) ;}
     .app-btn{
         padding: 5px 10px;
     }
+
+    .hero-content h1{
+        font-size: 4rem;
+    }
+
+    .hero{
+        width: 100%;
+        height: 80vh;
+        padding: 0px 25px;
+    }
+
+    
 }
 
 @media screen and (max-width:400px){
     .hero{
         width: 100%;
-        height: 73vh;
+        height: 80vh;
         padding: 0px 25px;
     }
 
@@ -357,7 +375,6 @@ color:rgb(224, 41, 9) ;}
         /* font-size: 67px; */
         font-size: 4rem;
         font-weight: 700;
-        padding-top: 4.6rem;
     }
 
     .btn{
@@ -374,6 +391,14 @@ color:rgb(224, 41, 9) ;}
     .buttons{
         display: flex;
         gap: 15px;
+    }
+}
+
+
+@media screen and (max-width:334px){
+    .buttons{
+        display: flex;
+        gap: 8px;
     }
 }
 

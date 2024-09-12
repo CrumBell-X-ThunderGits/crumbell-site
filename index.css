@@ -998,6 +998,9 @@ input{
 .footer-bottom .container{
     margin-inline: auto;
     padding-block: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 
 }
